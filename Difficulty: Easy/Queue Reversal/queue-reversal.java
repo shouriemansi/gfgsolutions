@@ -1,12 +1,12 @@
 class Solution {
     public void reverseQueue(Queue<Integer> q) {
         // code here
-        Stack<Integer>s=new Stack<>();
-        while(!q.isEmpty()){
-            s.push(q.remove());
+        Stack<Integer> stack = new Stack<>();
+        while (!q.isEmpty()) {
+            stack.push(q.remove());
         }
-        while (!s.isEmpty()) {
-            q.add(s.pop());
+        while (!stack.isEmpty()) {
+            q.add(stack.pop());
         }
     }
 }
